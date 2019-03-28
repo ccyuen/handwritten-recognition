@@ -24,9 +24,7 @@
 #   go-tests = true
 #   unused-packages = true
 
-required = ["github.com/gin-gonic/gin", 
-            "github.com/mongodb/mongo-go-driver/mongo",
-            "github.com/mongodb/mongo-go-driver/bson"]
+required = ["github.com/gin-gonic/gin"]
   
 [prune]
   go-tests = true

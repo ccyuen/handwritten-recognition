@@ -4,13 +4,9 @@ package main
 import (
 	// go router
 	"github.com/gin-gonic/gin"
-	//"net/http"
 
-	// mongodb
-	"github.com/mongodb/mongo-go-driver/mongo"
-
-	//jwt
-	//"github.com/dgrijalva/jwt-go"
+	// aws go driver
+	"github.com/aws/aws-sdk-go"
 
 	// std
 	"context"
@@ -19,8 +15,7 @@ import (
 	"time"
 
 	// custom
-	"github.com/ccyuen/api/environments"
-	"github.com/ccyuen/api/users"
+	"github.com/ccyuen/handwritten-recognition/api/users"
 )
 
 const myDB string = "myapp"
