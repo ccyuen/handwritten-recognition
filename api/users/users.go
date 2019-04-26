@@ -2,14 +2,13 @@
 package users
 
 import (
+	"fmt"
+	"log"
 	"context"
 
 	"github.com/gin-gonic/gin"
 	"github.com/mongodb/mongo-go-driver/mongo"
 	"github.com/mongodb/mongo-go-driver/bson"
-
-	"fmt"
-	"log"
 )
 
 // A User represents login information for a single account
