@@ -2,13 +2,11 @@
 package users
 
 import (
-	"fmt"
-	"log"
-	"context"
+	// "fmt"
+	// "log"
+	// "context"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mongodb/mongo-go-driver/mongo"
-	"github.com/mongodb/mongo-go-driver/bson"
 )
 
 // A User represents login information for a single account
@@ -52,13 +50,13 @@ func deleteUser(c *gin.Context) {
 
 // GetUser returns the User object with some uid
 func getUser(c *gin.Context) {
-	collection := c.MustGet("DB").(*mongo.Database).Collection(userCol)
-	var result User
-	filter := bson.D{{"email", c.Param("email")}}
-	err := collection.FindOne(context.TODO(), filter).Decode(&result)
-	if err != nil {
-		log.Fatal(err)
-	}
+	// collection := c.MustGet("DB").(*mongo.Database).Collection(userCol)
+	// var result User
+	// filter := bson.D{{"email", c.Param("email")}}
+	// err := collection.FindOne(context.TODO(), filter).Decode(&result)
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
 
-	fmt.Println("Got this result: ", result)
+	// fmt.Println("Got this result: ", result)
 }
